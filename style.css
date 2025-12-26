@@ -1,0 +1,231 @@
+:root {
+    --background-color: #8b0000;
+    --primary-color: #ffffff;
+    --secondary-color : #de9c4b;
+}
+
+html, body {
+    padding: 0;
+    height: 100%;
+    background-color: #8b0000;
+}
+.header{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+.split {
+    height: 100%;
+    width: 70%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+        left: 0;
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        font-family:'Times New Roman', Times, serif;
+        justify-content: center;
+}
+
+.centered { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+.centered button{
+    color: white;  
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    padding: 4px;
+    border: 1px solid white;
+    background-color: #8b0000;
+    
+}
+.centered button:hover {
+   /* Lift effect: moves 5px up */
+  transform: translateY(-2px);
+  /* Enhanced shadow for depth */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.navigation {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 20px;
+
+    display: flex;               /* use flexbox */
+    justify-content: center;     /* center horizontally */
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* optional shadow */
+    position: sticky;            /* keeps nav visible on scroll */
+    top: 0;
+    z-index: 1000;
+
+}
+.navigation nav a{
+    text-decoration: none;
+    margin-top: 50px;
+    color: var(--primary-color);
+    padding: 10px;
+    text-decoration: none;      /* remove underline */
+    color: #8B0000;                /* white text */
+    font-weight: bold;           /* bold text */
+    margin-left: 15px;          /* space between links */
+    font-size: 16px;
+    transition: color 0.3s;     /* smooth hover effect */
+}
+
+.navigation nav a:hover{
+    color: #000000;  
+}
+
+.right {
+    position: absolute;           /* position within parent */
+    right: 0;                     /* align to right */
+    top: 0;                       /* top of container */
+    width: 30%;                   /* adjust width as needed */
+    height: 100%; 
+    font-family:'Times New Roman', Times, serif;
+    background-image: url("assets/landing.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    ;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+
+.card {
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+   /* Lift effect: moves 5px up */
+  transform: translateY(-5px);
+  /* Enhanced shadow for depth */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;              /* space between cards */
+    padding: 20px;
+    
+}
+
+/* css for gallery page */
+
+/* Gallery container */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;          /* wrap images to next line if needed */
+    gap: 15px;                /* space between images */
+    justify-content: center;  /* center the gallery */
+    padding: 20px;
+    background-color: #f9f9f9; /* optional light background */
+}
+
+/* Gallery images */
+.gallery img {
+    width: 250px;            /* fixed width for consistency */
+    height: 200px;           /* fixed height */
+    object-fit: cover;       /* crop images nicely */
+    border-radius: 8px;      /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* smooth hover */
+}
+
+/* Hover effect */
+.gallery img:hover {
+    transform: scale(1.05);        /* zoom slightly */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+
+/* Form Wrapper */
+.form-wrapper {
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Form Heading */
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--background-color);
+}
+
+/* Form Groups */
+.form-group {
+    margin: 10px 20px;
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--background-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--background-color);
+    border-radius: 3px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--background-color);
+    outline: none;
+}
+
+.submit-btn {
+    display: block;       /* make button a block element */
+    margin-left: auto;    /* pushes it to the right */
+    margin-top: 20px;     /* optional spacing from above */
+    font-weight: bold;    /* keeps text bold */
+    border: 3px solid #8B0000; /* thick border */
+    padding: 12px 24px;   /* button padding */
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.submit-btn:hover {
+    background-color: #8B0000;
+    color: #fff;
+}
