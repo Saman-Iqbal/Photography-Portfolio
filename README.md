@@ -1,5 +1,7 @@
 # Photography-Portfolio
 Simple website showcasing my photography portfolio
 
-https://github.com/user-attachments/assets/044b39c8-5d81-431c-be80-535da24fc79d
+https://github.com/user-attachments/assets/1b4e49ab-51eb-4557-9677-470dc3298d90
+
+
 
